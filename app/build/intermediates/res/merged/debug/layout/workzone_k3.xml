@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C6E3FF" xmlns:app="http://schemas.android.com/apk/res/com.kroid.bcmc">
+
+    <!-- android:background="#C6E3FF" -->
+
+    
+    
+     <RelativeLayout
+        android:id="@+id/relworkmain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:visibility="visible"
+         >
+         <RelativeLayout
+        android:id="@+id/relWZtopbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relWZMainMiddl"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/imageView1"
+            android:src="@drawable/arrowright"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_toLeftOf="@+id/imageView1" >
+
+            <LinearLayout
+                android:id="@+id/linWZfilePath"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:alpha="0.7"
+                android:visibility="gone"
+                android:weightSum="1" >
+
+                <RelativeLayout
+                    android:id="@+id/relWZfolder"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5" >
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relWZgallery"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="TextView" />
+                </RelativeLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+        
+        <!-- <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            android:maxLength="0"
+            android:singleLine="true"
+            android:textSize="18sp"
+            android:focusable="false"
+             >
+        </EditText>
+ -->
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="click here for line 1"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:textSize="18sp" >
+        </EditText>
+        
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="click here for line 2"
+            android:maxLength="30"
+            android:singleLine="true"
+            android:textSize="18sp"
+            android:visibility="gone"
+             >
+        </EditText>
+        
+        
+
+
+        <HorizontalScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_toLeftOf="@+id/imageView1"
+             android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:scrollbars="none"
+            android:layout_marginBottom="2dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+                
+            <Button
+            android:id="@+id/btnLines"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Change Line" 
+            android:singleLine="true"
+            />
+                
+            <Button
+            android:id="@+id/btnBack"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Background"
+            android:singleLine="true"
+             />
+            
+            <Button
+            android:id="@+id/btnRot"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:text="Rotate"
+            android:singleLine="true"
+             />
+                
+                
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relWZMainMiddl"
+        android:layout_width="match_parent"
+        android:layout_height="480px"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/strokebackgorund" >
+
+        <com.kroid.ZoomView.TouchImageView
+            android:id="@+id/imgMeme"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="2dp"
+            />
+
+        <com.kroid.MagicText.MagicTextView
+            android:id="@+id/txtline1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#FFFFFF"
+            android:textSize="38sp"
+            android:gravity="center"
+            android:typeface="monospace"
+            android:textStyle="bold"
+            app:strokeColor="#000000"
+            app:strokeJoinStyle="miter"
+            app:strokeWidth="0.8dp"
+             />
+        
+        <com.kroid.MagicText.MagicTextView
+            android:id="@+id/txtline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#FFFFFF"
+            android:textSize="38sp"
+            android:gravity="center"
+            android:typeface="monospace"
+            android:textStyle="bold"
+            app:strokeColor="#000000"
+            app:strokeJoinStyle="miter"
+            app:strokeWidth="0.8dp"
+             />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+        </RelativeLayout>
+
+        <com.kroid.MagicText.MagicTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#FFFFFF"
+            android:text="kroid-art"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:alpha="0.3"
+            android:textSize="12sp"
+            app:strokeColor="#000000"
+            app:strokeJoinStyle="miter"
+            app:strokeWidth="0.5dp"
+             />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relWZbottm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relWZMainMiddl"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/btnWZsave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/btnNew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:text="New"
+            android:focusable="false"
+             />
+
+        <Button
+            android:id="@+id/btnBaka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="Jo baka" />
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#FFFFFF"
+        android:visibility="gone"
+         >
+
+        <GridView
+            android:id="@+id/gridViewImgs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:numColumns="3"
+            android:layout_margin="10dp"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp"
+            
+             >
+        </GridView>
+
+    </RelativeLayout>
+    
+    
+    <RelativeLayout
+        android:id="@+id/relList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#FFFFFF"
+        android:visibility="gone"
+         >
+        
+        <RelativeLayout
+        android:id="@+id/reltitle"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF"
+        android:visibility="visible"
+         >
+        
+            <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#000000"
+         >
+        </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="BCMC's"
+                android:textSize="20sp"
+                
+                 />
+            
+        </RelativeLayout>
+        <ListView
+                android:id="@+id/listViewFolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reltitle"
+                android:layout_centerHorizontal="true"
+                android:overScrollMode="never"
+                android:divider="#D9D9DB"
+                android:dividerHeight="1dp"
+                android:layout_margin="10dp"
+                android:background="#FFFFFF"
+                 >
+            </ListView>
+
+        <!-- <GridView
+            android:id="@+id/gridViewImgs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:numColumns="3"
+            android:layout_margin="10dp"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp"
+            
+             >
+        </GridView> -->
+
+    </RelativeLayout>
+    
+    
+
+</RelativeLayout><!-- From: file:/D:/Kinchit/work%20kinchit/Practice/project/BCMC/app/src/main/res/layout/workzone_k3.xml -->

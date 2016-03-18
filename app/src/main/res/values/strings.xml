@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BCMC</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    
+    <!--  -->
+    <string-array name="folder_list">
+        <item>meme</item>
+        <item>famous</item>
+        <item>desi</item>
+        <item>extra</item>
+        <item>2gg</item>
+    </string-array>
+    <!--  -->
+
+</resources>

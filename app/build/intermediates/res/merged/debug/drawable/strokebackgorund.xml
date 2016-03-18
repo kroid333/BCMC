@@ -1,0 +1,10 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <solid android:color="#000000" />
+
+    <stroke
+        android:width="1dip"
+        android:color="#FFFFFF" />
+
+</shape><!-- From: file:/D:/Kinchit/work%20kinchit/Practice/project/BCMC/app/src/main/res/drawable/strokebackgorund.xml -->
